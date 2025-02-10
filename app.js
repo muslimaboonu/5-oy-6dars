@@ -1,3 +1,4 @@
+//
 // uyga vazifa
 //    1-misol (map, filter)
 // const students = [
@@ -24,12 +25,16 @@
 // }
 // console.log(getNamesByGrade(students, 5));
 //    2-misol (reduse)
+
+
+//
 //    3-misol (map)
 // const numbers = [1, 2, 3, 4, 5];
 // let result = numbers.map((item) => {
 //   return item ** 2;
 // });
 // console.log(result);
+
 
 //    5-misol (split, map, join)
 // let text = "George Raymond Richard Martin";
@@ -56,12 +61,14 @@
 // const ageDifference = old - young;
 // console.log(ageDifference);
 
+
 // 7-misol (filter)
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const evenNumbers = numbers.filter((num) => num % 2 === 0);
 // const oddNumbers = numbers.filter((num) => num % 2 !== 0);
 // console.log("Juft sonlar:", evenNumbers);
 // console.log("Toq sonlar:", oddNumbers);
+
 
 // 8-misol (reduce)
 
@@ -154,6 +161,146 @@
 // console.log(ratingSort.at());
 // console.log(ratingSort.at(-1));
 
+
+// 11-misol (sort)
+// function findCheapestProduct(products) {
+//     if (!products.length) return null;
+    
+//     return products.sort((a, b) => a.price - b.price)[0];
+// }
+
+// let products = [
+//   {
+//     id: 6,
+//     name: "Smarthpone",
+//     price: 12000,
+//     rating: 4.5,
+//     discount: 20,
+//   },
+//   {
+//     id: 2,
+//     name: "Acer",
+//     price: 10000,
+//     rating: 4.3,
+//     discount: 10,
+//   },
+//   {
+//     id: 1,
+//     name: "Mac book",
+//     price: 17000,
+//     rating: 4.7,
+//     discount: 40,
+//   },
+//   {
+//     id: 4,
+//     name: "HP",
+//     price: 21000,
+//     rating: 4.1,
+//     discount: 30,
+//   },
+//   {
+//     id: 5,
+//     name: "Dell",
+//     price: 35000,
+//     rating: 4.9,
+//     discount: 30,
+//   },
+// ];
+
+// const cheapestProduct = findCheapestProduct(products);
+// console.log(cheapestProduct);
+
+
+// 13-misol (map)
+// function findCheapestProduct(products) {
+//   if (!products.length) return null;
+
+//   return products.sort((a, b) => a.price - b.price)[0];
+// }
+
+// let products = [
+//   {
+//     id: 6,
+//     name: "Smarthpone",
+//     price: 12000,
+//     rating: 4.5,
+//     discount: 20,
+//   },
+//   {
+//     id: 2,
+//     name: "Acer",
+//     price: 10000,
+//     rating: 4.3,
+//     discount: 10,
+//   },
+//   {
+//     id: 1,
+//     name: "Mac book",
+//     price: 17000,
+//     rating: 4.7,
+//     discount: 40,
+//   },
+//   {
+//     id: 4,
+//     name: "HP",
+//     price: 21000,
+//     rating: 4.1,
+//     discount: 30,
+//   },
+//   {
+//     id: 5,
+//     name: "Dell",
+//     price: 35000,
+//     rating: 4.9,
+//     discount: 30,
+//   },
+// ];
+// const productNames = products.map((product) => product.name);
+// console.log(productNames);
+
+
+// 15-misol (filter)
+// let products = [
+//   {
+//     id: 6,
+//     name: "Smarthpone",
+//     price: 12000,
+//     rating: 4.5,
+//     discount: 20,
+//   },
+//   {
+//     id: 2,
+//     name: "Acer",
+//     price: 10000,
+//     rating: 4.3,
+//     discount: 10,
+//   },
+//   {
+//     id: 1,
+//     name: "Mac book",
+//     price: 17000,
+//     rating: 4.7,
+//     discount: 40,
+//   },
+//   {
+//     id: 4,
+//     name: "HP",
+//     price: 21000,
+//     rating: 4.1,
+//     discount: 30,
+//   },
+//   {
+//     id: 5,
+//     name: "Dell",
+//     price: 35000,
+//     rating: 4.9,
+//     discount: 30,
+//   },
+// ];
+
+// products = products.filter((product) => product.id !== 4);
+
+// console.log("Yangi produktalar:", products);
 // 20-misol (Object.entries, map, join)
 // function digitSum(n) {
 //   if (n < 10) return n;
